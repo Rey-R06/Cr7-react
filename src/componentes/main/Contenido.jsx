@@ -1,9 +1,9 @@
 import "./contenido.css"; // Ruta relativa desde Header.jsx
 
-export default function Contenido() {
+export default function Contenido({imgMain}) {
   return (
       <main>
-        <img src="/img/main/img-main.jpg" alt="" />
+        <img src={imgMain} alt="" />
         <h1>Cristiano Ronaldo: El Fenómeno del Fútbol Moderno</h1>
         <p>
           Cristiano Ronaldo dos Santos Aveiro, conocido como CR7,
@@ -26,36 +26,36 @@ export default function Contenido() {
         <section className="datos">
           <article>
               <p>
-                  Cristiano Ronaldo dos Santos Aveiro.
+                  -Cristiano Ronaldo dos Santos Aveiro.
               </p>
               <p>
-                  Nacido el 5 de febrero de 1985.
+                  -Nacido el 5 de febrero de 1985.
               </p>
               <p>
-                  Lugar de nacimiento: Funchal, Madeira, Portugal.
+                  -Lugar de nacimiento: Funchal, Madeira, Portugal.
               </p>
               <p>
-                  Altura: 1.87 m.
+                  -Altura: 1.87 m.
               </p>
               <p>
-                  Posición: Delantero.
+                  -Posición: Delantero.
               </p>
           </article>
           <article>
               <p>  
-                  5 veces ganador del Balón de Oro.
+                  -5 veces ganador del Balón de Oro.
               </p>
               <p>
-                  5 veces campeón de la UEFA Champions League.
+                  -5 veces campeón de la UEFA Champions League.
               </p>
               <p>
-                  Máximo goleador de la historia.
+                  -Máximo goleador de la historia.
               </p>
               <p>
-                  Máximo goleador histórico de la UEFA Champions League.
+                  -Máximo goleador histórico de la UEFA Champions League.
               </p>
               <p>
-                  Máximo goleador histórico de la selección portuguesa.
+                  -Máximo goleador histórico de la selección portuguesa.
               </p>
           </article>
         </section>

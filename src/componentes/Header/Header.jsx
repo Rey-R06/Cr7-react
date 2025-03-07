@@ -1,13 +1,14 @@
-import "./header.css"; // Ruta relativa desde Header.jsx
+import "./header.css"; 
 
-export default function Header({cr7Logo}) {
+export default function Header({cr7Logo, onPageSelect}) {
+
   return (
         <header>
             <img src={cr7Logo} alt="logo de cr7" />
             <nav>
                 <ul>
-                    <li>Clubes</li>
-                    <li>Seleccion</li>
+                    <li><button onClick={onPageSelect}>Clubes</button></li>
+                    <li><button onClick={onPageSelect}>Seleccion</button></li>
                 </ul>
             </nav>
         </header>
