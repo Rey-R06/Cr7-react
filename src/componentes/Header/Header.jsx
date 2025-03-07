@@ -1,9 +1,7 @@
-import cr7Logo from "../../assets/img/header/logo-CR7.png"; // Ruta relativa corregida
 import "./header.css"; // Ruta relativa desde Header.jsx
 
-export default function Header() {
+export default function Header({cr7Logo}) {
   return (
-    <div>
         <header>
             <img src={cr7Logo} alt="logo de cr7" />
             <nav>
@@ -13,6 +11,5 @@ export default function Header() {
                 </ul>
             </nav>
         </header>
-    </div>
   )
 }

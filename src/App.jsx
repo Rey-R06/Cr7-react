@@ -1,12 +1,13 @@
+import Footer from "./componentes/Footer/Footer"
 import Header from "./componentes/Header/Header"
 import Contenido from "./componentes/main/Contenido"
-import "./resetStyle.css"
 function App() {
 
   return (
     <>
-      <Header />
+      <Header cr7Logo={"/img/header/logo-dorado-cr7.png"}/>
       <Contenido />
+      <Footer />
     </>
   )
 }
