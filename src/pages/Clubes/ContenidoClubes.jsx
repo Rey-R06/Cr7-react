@@ -50,6 +50,9 @@ export default function ContenidoClubes({imgMain}) {
           img ="/img/main/clubes/alnasser.jpg"
         />
     </section>
+    <h2  className="frase-iconica">
+      "Siempre doy lo mejor de mí en cada partido, en cada entrenamiento. No importa el club, siempre dejo todo en la cancha." - Cristiano Ronaldo.
+    </h2>
   </main>
   )
 }

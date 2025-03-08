@@ -1,4 +1,4 @@
-import "./contenido.css"; // Ruta relativa desde Header.jsx
+import "./contenido.css";  
 
 export default function Contenido({imgMain}) {
   return (

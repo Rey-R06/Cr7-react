@@ -25,9 +25,10 @@ main p{
 }
 
 .card{
-    background: #ffdc16cc;
+    background: black;
+    color: #ffdc16cc;
     border-radius: 20px;
-    border: rgb(0, 0, 0) 2px solid;
+    border: #ffdc16cc 5px solid;
     margin: 0 auto;
     min-width: 250px;
     width: 400px;
