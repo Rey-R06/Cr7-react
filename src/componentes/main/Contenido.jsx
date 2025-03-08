@@ -1,6 +1,4 @@
-import "./contenido.css";  
-
-export default function Contenido({imgMain}) {
+ export default function Contenido({imgMain}) {
   return (
       <main>
         <img src={imgMain} alt="" />
