@@ -23,7 +23,7 @@ export default function Header({cr7Logo, setContenidoMain}) {
         {/* Menú de navegación */}
         <nav className={menuAbierto ? "menu abierto" : "menu"}>
                 <ul>
-                    <li><button onClick={() => setContenidoMain(<Contenido imgMain={"/img/main/principal/img-main.jpg"} />)}>Home</button></li>
+                    <li><button onClick={() => setContenidoMain(<Contenido imgMain={"/img/main/principal/img-main.jpg"} />)}>Inicio</button></li>
                     <li><button onClick={() => setContenidoMain(<ContenidoClubes imgMain={"/img/main/clubes/cr7-main.png"} />)}>Clubes</button></li>
                     <li><button onClick={() => setContenidoMain(<ContenidoSeleccion imgMain={"/img/main/selecciones/cr7-portugalmain.jpg"} />)}>Selección</button></li>
                 </ul>
