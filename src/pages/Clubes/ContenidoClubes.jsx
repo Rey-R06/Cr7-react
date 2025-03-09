@@ -28,7 +28,7 @@ export default function ContenidoClubes({imgMain}) {
           titulo="Real Madrid (2009-2018)"
           descripcion1="4 UEFA Champions League, 2 La Liga, 2 Copas del Rey y Máximo goleador histórico del Real Madrid con 450 goles."
           momentos="Su bicicleta ante la Juventus en la Champions League 2017-2018."
-          img ="public/img/main/clubes/realmadrid.jpg"
+          img ="/img/main/clubes/realmadrid.jpg"
         />
         <Card 
           titulo="Juventus (2018-2021)"
