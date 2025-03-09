@@ -1,4 +1,3 @@
-import "./clubes.css";
 import Card from "./Card";
 
 export default function ContenidoClubes({imgMain}) {

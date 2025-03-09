@@ -32,8 +32,8 @@ main p{
 /*Page principal*/
 .datos{
     display: flex;
-    margin: 10px;
-    height: 350px;
+    width: 100%;
+    height: fit-content;
     gap: 20px;
 }
 

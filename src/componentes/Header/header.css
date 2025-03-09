@@ -36,3 +36,74 @@ header button:hover{
     background: #666666;
     border-radius: 10px;
 }
+
+  
+  /* Oculta el menú en pantallas pequeñas por defecto */
+  .menu {
+    display: flex;
+  }
+  
+  /* Estilos para el botón hamburguesa */
+  .menu-hamburguesa {
+    display: none; /* Oculto por defecto */
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+  }
+  
+
+/* responsive.css */
+
+/* Para tablets */
+@media (max-width: 768px) {  
+    header ul{
+        gap: 10px;
+        margin-right: 5px;
+    }
+
+    .card{
+        height: fit-content;
+    }
+    
+  }
+  
+ 
+/* Responsive: Si la pantalla es menor a 478px */
+@media (max-width: 478px) {
+    .menu {
+      display: none; /* Ocultar menú */
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      background-color: #444;
+      text-align: center;
+    }
+  
+    .menu.abierto {
+      display: flex; /* Mostrar menú cuando se abre */
+      margin-top: 40px;
+    }
+  
+    .menu ul {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    header button:hover{
+        background: #000000;
+    }
+  
+    .menu-hamburguesa {
+        position: relative;
+        top: -5px;
+        right: -20px;
+        display: block; /* Mostrar botón hamburguesa */
+        font-size: 3rem;
+    }
+  }
+  

@@ -1,0 +1,26 @@
+/* responsive.css */
+
+/* Para tablets */
+@media (max-width: 768px) {
+    .datos{
+        flex-wrap: wrap;
+        gap: 0;
+    }
+
+    .card{
+        height: fit-content;
+    }
+    
+  }
+  
+  /* Para móviles */
+  @media (max-width: 480px) {
+    main{
+        width: 100%;
+    }
+
+    .contenedor-card{
+        margin: 0 auto;
+    }
+  }
+  
