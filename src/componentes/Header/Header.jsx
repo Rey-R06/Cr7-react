@@ -1,11 +1,10 @@
 import "./header.css"; 
 import { useState } from "react";
-import Contenido from "../main/Contenido";
-import ContenidoSeleccion from "../../pages/Seleccion/ContenidoSeleccion";
-import ContenidoClubes from "../../pages/Clubes/ContenidoClubes";
+import { useNavigate } from "react-router-dom";
 
-export default function Header({cr7Logo, setContenidoMain}) {
+export default function Header() {
     const [menuAbierto, setMenuAbierto] = useState(false);
+    const navigate = useNavigate(); // 📌 Hook para cambiar la página
   
     function toggleMenu() {
       setMenuAbierto(!menuAbierto);
@@ -13,7 +12,7 @@ export default function Header({cr7Logo, setContenidoMain}) {
 
   return (
         <header>
-        <img src={cr7Logo} alt="logo de cr7" />
+        <img src="/img/header/logo-dorado-cr7.png" alt="logo de cr7" />
         
         {/* Botón Hamburguesa */}
         <button className="menu-hamburguesa" onClick={toggleMenu}>
@@ -23,9 +22,9 @@ export default function Header({cr7Logo, setContenidoMain}) {
         {/* Menú de navegación */}
         <nav className={menuAbierto ? "menu abierto" : "menu"}>
                 <ul>
-                    <li><button onClick={() => setContenidoMain(<Contenido imgMain={"/img/main/principal/img-main.jpg"} />)}>Inicio</button></li>
-                    <li><button onClick={() => setContenidoMain(<ContenidoClubes imgMain={"/img/main/clubes/cr7-main.png"} />)}>Clubes</button></li>
-                    <li><button onClick={() => setContenidoMain(<ContenidoSeleccion imgMain={"/img/main/selecciones/cr7-portugalmain.jpg"} />)}>Selección</button></li>
+                    <li><button onClick={() => navigate("/")}>Inicio</button></li>
+                    <li><button onClick={() => navigate("/clubes")}>Clubes</button></li>
+                    <li><button onClick={() => navigate("/seleccion")}>Selección</button></li>
                 </ul>
             </nav>
         </header>

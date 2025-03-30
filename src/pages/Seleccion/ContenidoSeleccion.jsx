@@ -1,7 +1,7 @@
 export default function ContenidoSeleccion({imgMain}) {
   return (  
     <main>
-      <img src={imgMain} alt="" />
+      <img src="/img/main/selecciones/cr7-portugalmain.jpg" alt="" />
       <h1>Cristiano Ronaldo con la Selección de Portugal</h1>
       <p>
         Cristiano Ronaldo es el máximo goleador histórico de la selección 

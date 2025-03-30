@@ -1,9 +1,9 @@
 import Card from "./Card";
 
-export default function ContenidoClubes({imgMain}) {
+export default function ContenidoClubes() {
   return (  
   <main>
-    <img src={imgMain} alt="" />
+    <img src="/img/main/clubes/cr7-main.png" alt="" />
     <h1>La Trayectoria de Cristiano Ronaldo en Clubes</h1>
     <p>
       Cristiano Ronaldo ha jugado en algunos de los clubes 
